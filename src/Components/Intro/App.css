@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: antiquewhite;
 }
 .header, .footer {
     background-color: brown;
+    color: rgb(214, 205, 193);
 } 
 .content {
     height: 100vh;
@@ -14,4 +14,5 @@
     justify-content: center;
     align-items: center;
     background: #02223d;
+    color: rgb(165, 149, 127);
 } 
