@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import { IoTrash } from "react-icons/io5";
 
 export default function ListAndKeys() {
     const [items, setItem] = useState([
@@ -10,10 +11,10 @@ export default function ListAndKeys() {
     <div className='content'>
         <ul>
             {items.map((item) => (
-                <li>
+                <li className='item' key={item.id}>
                     <input type="checkbox" checked={item.checked}/>
                     <label>{item.name}</label>
-                    <button>Delete</button>
+                    <IoTrash role='button' tabIndex='0'/>
                 </li>
             ))}
         </ul>
