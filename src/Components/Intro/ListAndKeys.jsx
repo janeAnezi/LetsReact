@@ -1,14 +1,22 @@
 import {useState} from 'react'
 
 export default function ListAndKeys() {
-    const [item, setItem] = useState([
-        { id: 1, name: 'Item 1', check: false },
-        { id: 2, name: 'Item 2', check: false},
-        { id: 3, name: 'Item 3', check: false },
+    const [items, setItem] = useState([
+        { id: 1, name: 'Item 1', checked: false },
+        { id: 2, name: 'Item 2', checked: false},
+        { id: 3, name: 'Item 3', checked: false },
     ])
   return (
-    <div>
-      
+    <div className='content'>
+        <ul>
+            {items.map((item) => (
+                <li>
+                    <input type="checkbox" checked={item.checked}/>
+                    <label>{item.name}</label>
+                    <button>Delete</button>
+                </li>
+            ))}
+        </ul>
     </div>
   )
 }
