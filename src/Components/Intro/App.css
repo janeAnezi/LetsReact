@@ -35,12 +35,16 @@
     height: 20px;
     margin-right: 8px;
 }
+.item input[type="checkbox"]:focus + label {
+    text-decoration: line-through;
+}
 .svg {
     font-size: 22px;
-    color: orange;
+    color: rgb(8, 155, 143);
     transition: all 1s ease-in-out;
+    cursor: pointer;
 }
 .svg:focus, .svg:hover {
     font-size: 25px;
-    color: rgb(94, 3, 3);
+    color: rgb(211, 15, 15);
 }
