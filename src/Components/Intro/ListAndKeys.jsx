@@ -12,9 +12,12 @@ export default function ListAndKeys() {
         <ul>
             {items.map((item) => (
                 <li className='item' key={item.id}>
-                    <input type="checkbox" checked={item.checked}/>
-                    <label>{item.name}</label>
-                    <IoTrash role='button' tabIndex='0'/>
+                    <div>
+                        <input type="checkbox" checked={item.checked}
+                        />
+                        <label>{item.name}</label>
+                    </div>
+                    <IoTrash className='svg' role='button' tabIndex='0'/>
                 </li>
             ))}
         </ul>

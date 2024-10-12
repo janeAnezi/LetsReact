@@ -16,3 +16,31 @@
     background: #02223d;
     color: rgb(165, 149, 127);
 } 
+.item {
+    list-style: none;
+    background: #363801;
+    padding: 10px;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+.item:hover {
+    box-shadow: 0 4px 8px 0 rgba(114, 113, 113, 0.2), 0 6px 20px 0 rgba(112, 111, 111, 0.19);;
+}
+.item input[type="checkbox"] {
+   text-align: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+.svg {
+    font-size: 22px;
+    color: orange;
+    transition: all 1s ease-in-out;
+}
+.svg:focus, .svg:hover {
+    font-size: 25px;
+    color: rgb(94, 3, 3);
+}
