@@ -9,8 +9,9 @@ export default function ListAndKeys() {
     ]);
 
     let HandleCheck = (id) => {
-        console.log(`key: ${id}`);
+       let listItems = items.map((item) => item.id === id ? {...item, checked: !item.checked} : item);
 
+       setItem(listItems);
     }
   return (
     <div className='content'>
