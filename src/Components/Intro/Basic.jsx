@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import ListAndKeys from "./ListAndKeys";
 import './App.css'
+import AddItem from "./AddItem";
 
 
 export default function Basic() {
@@ -31,10 +32,10 @@ let handleDelete = (id) => {
   return (
     <div style={{textAlign: 'center'}}>
      <Header />
+     <AddItem />
      {/* <Content /> */}
      <ListAndKeys items={items} handleCheck={handleCheck} handleDelete={handleDelete} />
      <Footer length={items.length} />
-
     </div>
   )
 }

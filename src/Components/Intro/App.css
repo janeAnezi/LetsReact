@@ -82,3 +82,32 @@
     font-size: 25px;
     color: rgb(211, 15, 15);
 }
+
+ .addForm {
+    background: #02223d;
+    color: rgb(6, 185, 170);
+    font-size: 20px;
+    padding: 10px 0;
+    border-bottom: dashed 1px rgb(2, 68, 63);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addForm label {
+    padding-right: 10px;
+}
+.addForm input[type='text'] {
+   font-size: 1rem;
+   border-radius: 5px;
+   outline: none;
+   padding: 6px;
+   border: none;
+   margin-right: 10px;
+}
+.addForm button {
+    background-color: rgb(142, 220, 213);
+    border-radius: 25px;
+    border: none;
+    padding: 8px 8px 4px 8px;
+    font-size: 18px;
+}
