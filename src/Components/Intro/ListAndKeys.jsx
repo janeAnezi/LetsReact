@@ -12,6 +12,8 @@ export default function ListAndKeys() {
        let listItems = items.map((item) => item.id === id ? {...item, checked: !item.checked} : item);
 
        setItem(listItems);
+
+       localStorage.setItem('ShopingList', JSON.stringify(listItems));
     }
   return (
     <div className='content'>
@@ -24,7 +26,11 @@ export default function ListAndKeys() {
                             type="checkbox" 
                             checked={item.checked}
                         />
-                        <label>{item.name}</label>
+                        <label 
+                            style={(item.checked) ? {textDecoration: 'line-through'}: null}
+                            onDoubleClick={()=>{HandleCheck(item.id)}}>
+                            {item.name}
+                        </label>
                     </div>
                     <IoTrash className='svg' role='button' tabIndex='0'/>
                 </li>
