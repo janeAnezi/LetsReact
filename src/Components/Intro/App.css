@@ -6,7 +6,7 @@
 .header {
     display: flex;
     justify-content: space-around;
-    padding: 10px 0;
+   
 }
 .plus {
     font-size: 25px;
@@ -37,6 +37,7 @@
 .header, .footer {
     background-color: brown;
     color: rgb(214, 205, 193);
+    padding: 10px 0;
 } 
 .content {
     height: 100vh;
@@ -46,6 +47,7 @@
     align-items: center;
     background: #02223d;
     color: rgb(165, 149, 127);
+    padding-top: 20px;
 } 
 .item {
     list-style: none;
