@@ -3,6 +3,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+.plus {
+    font-size: 25px;
+    background-color: #02223d;
+    border-radius: 20px;
+    margin-top: 8px;
+    transition: transform 1s ease;
+}
+.plus:hover {
+    transform: rotate(360deg);
+}
+.add sup {
+    visibility: hidden;  
+    opacity: 0;          
+    transition: opacity 2s ease;  
+  }
+  
+  .add:hover sup {
+    visibility: visible; 
+    opacity: 1;          
+  }
+  
+.add {
+    display: flex;
+    transition: all 1s ease;
+}
+
 .header, .footer {
     background-color: brown;
     color: rgb(214, 205, 193);
@@ -11,7 +42,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background: #02223d;
     color: rgb(165, 149, 127);
@@ -43,6 +74,7 @@
     color: rgb(8, 155, 143);
     transition: all 1s ease-in-out;
     cursor: pointer;
+    outline: none;
 }
 .svg:focus, .svg:hover {
     font-size: 25px;
