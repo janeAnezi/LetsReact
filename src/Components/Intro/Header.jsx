@@ -10,7 +10,9 @@ export default function Header() {
     setShowAddItem(!showAddItem);  
   }
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    
     alert('submitted');
   }
 

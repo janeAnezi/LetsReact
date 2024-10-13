@@ -2,7 +2,7 @@ import { IoMdAdd } from "react-icons/io";
 
 export default function AddItem({newItem, setNewItem, handleSubmit}) {
   return (
-    <form className='addForm'>
+    <form className='addForm' onSubmit={handleSubmit}>
         <label htmlFor="addItem">Add Item</label>
         <input 
             type="text" 
