@@ -6,8 +6,8 @@ export default function Footer({length}) {
 
   return (
     <div className='footer'>
-        <p>{length} List {(length < 2 && length >= 0) ? 'item' : 'items'}</p>
-      <p>Copyright &copy; {today.getFullYear()} </p>
+      <p>{length} List {(length < 2 && length >= 0) ? 'item' : 'items'}</p>
+      <small>Copyright &copy; {today.getFullYear()} </small>
     </div>
   )
 }

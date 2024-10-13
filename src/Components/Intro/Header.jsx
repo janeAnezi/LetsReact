@@ -4,10 +4,16 @@ import AddItem from "./AddItem";
 
 export default function Header() {
   const [showAddItem, setShowAddItem] = useState(false);
+  const [newItem, setNewItem] = useState('');
 
   const handleClick = () => {
     setShowAddItem(!showAddItem);  
   }
+
+  const handleSubmit = () => {
+    alert('submitted');
+  }
+
   return (
     <div>
       <div className='header'>
@@ -18,7 +24,7 @@ export default function Header() {
         </div>
       </div>
         {/* Conditionally render AddItem component */}  
-        {showAddItem && <AddItem />}
+        {showAddItem && <AddItem newItem={newItem} setNewItem={setNewItem} handleSubmit={handleSubmit} />}
     </div>
   )
 }
