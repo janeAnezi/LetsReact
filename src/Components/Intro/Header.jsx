@@ -12,8 +12,10 @@ export default function Header() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    
-    alert('submitted');
+
+    if(!newItem) return;
+    // console.log(newItem);
+    setNewItem('');
   }
 
   return (
