@@ -4,10 +4,12 @@ import Footer from "./Footer";
 import Header from "./Header";
 import ListAndKeys from "./ListAndKeys";
 import './App.css'
+import Search from "./Search";
 
 
 export default function Basic() {
   const [items, setItem] = useState(JSON.parse(localStorage.getItem('ShopingList')));
+  const [search, setSearch] = useState('')
 
 
 const setAndSaveItems = (newItems) => {
@@ -38,6 +40,7 @@ const addItem = (item) => {
   return (
     <div style={{textAlign: 'center'}}>
      <Header addItem={addItem}/>
+     <Search search={search} setSearch={setSearch}/>
      {/* <Content /> */}
      <ListAndKeys items={items} handleCheck={handleCheck} handleDelete={handleDelete} />
      <Footer length={items.length} />
