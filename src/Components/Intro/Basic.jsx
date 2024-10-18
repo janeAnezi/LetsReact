@@ -14,23 +14,34 @@ export default function Basic() {
     { id: 4, name: 'Item 4', checked: false },
 ]);
 
+
+const setAndSaveItems = (newItems) => {
+  setItem(newItems);
+  localStorage.setItem('ShopingList', JSON.stringify(newItems));
+}
+
 let handleCheck = (id) => {
   let listItems = items.map((item) => item.id === id ? {...item, checked: !item.checked} : item);
-
-  setItem(listItems);
-
-  // localStorage.setItem('ShopingList', JSON.stringify(listItems));
+  
+  setAndSaveItems(listItems)
+  
 }
 
 let handleDelete = (id) => {
   let listItems = items.filter((item) => item.id !== id);
-  setItem(listItems);
-  // localStorage.setItem('Shopinglist', JSON.stringify(listItems))
+  
+  setAndSaveItems(listItems)
+}
+
+const addItem = (item) => {
+  const id = items.length ? items[items.length - 1].id + 1 : 1;
+  const myNewItem = {id, checked: false, item};
+  const listItems = [...items, myNewItem]
 }
 
   return (
     <div style={{textAlign: 'center'}}>
-     <Header />
+     <Header addItem={addItem}/>
      {/* <Content /> */}
      <ListAndKeys items={items} handleCheck={handleCheck} handleDelete={handleDelete} />
      <Footer length={items.length} />

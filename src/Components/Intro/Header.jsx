@@ -2,22 +2,24 @@ import { useState } from "react";
 import { MdFormatListBulletedAdd } from "react-icons/md";
 import AddItem from "./AddItem";
 
-export default function Header() {
+export default function Header({addItem}) {
   const [showAddItem, setShowAddItem] = useState(false);
-  const [newItem, setNewItem] = useState('');
+  const [newItem, setNewItem] = useState(''); 
 
   const handleClick = () => {
     setShowAddItem(!showAddItem);  
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
+  
 
-    if(!newItem) return;
-    // console.log(newItem);
-    setNewItem('');
-  }
+const handleSubmit = (e) => {
+  e.preventDefault()
 
+  if(!newItem) return;
+  addItem(newItem);
+  setNewItem('');
+}
+  
   return (
     <div>
       <div className='header'>
