@@ -14,7 +14,7 @@ export default function Basic() {
 
 const setAndSaveItems = (newItems) => {
   setItem(newItems);
-  localStorage.setItem('ShopingList', JSON.stringify(newItems));
+  localStorage.setItem('ShopingList', JSON.stringify(newItems)) 
 }
 
 let handleCheck = (id) => {
@@ -39,11 +39,15 @@ const addItem = (item) => {
 
   return (
     <div style={{textAlign: 'center'}}>
-     <Header addItem={addItem}/>
-     <Search search={search} setSearch={setSearch}/>
-     {/* <Content /> */}
-     <ListAndKeys items={items} handleCheck={handleCheck} handleDelete={handleDelete} />
-     <Footer length={items.length} />
+      <Header addItem={addItem}/>
+      <Search search={search} setSearch={setSearch}/>
+      {/* <Content /> */}
+      <ListAndKeys 
+        items={items} 
+        handleCheck={handleCheck} 
+        handleDelete={handleDelete} 
+      />
+      <Footer length={items.length} />
     </div>
   )
 }
