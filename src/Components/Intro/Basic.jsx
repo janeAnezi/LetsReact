@@ -35,8 +35,9 @@ let handleDelete = (id) => {
 
 const addItem = (item) => {
   const id = items.length ? items[items.length - 1].id + 1 : 1;
-  const myNewItem = {id, checked: false, item};
+  const myNewItem = {id, name: item, checked: false};
   const listItems = [...items, myNewItem]
+  setAndSaveItems(listItems);
 }
 
   return (

@@ -8,7 +8,7 @@ export default function ItemList({items, handleCheck, handleDelete}) {
             <li className='item' key={item.id}>
                 <div>
                     <input 
-                        onChange={()=>{handleCheck(item.id)}}
+                        onChange={()=>{handleCheck(item.id)}} 
                         type="checkbox" 
                         checked={item.checked}
                     />

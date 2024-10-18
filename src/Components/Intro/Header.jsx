@@ -25,7 +25,7 @@ const handleSubmit = (e) => {
       <div className='header'>
         <h1>Grocery List</h1>
         <div className="add" onClick={handleClick}>
-          <MdFormatListBulletedAdd className="plus"/> 
+          <MdFormatListBulletedAdd className="plus"/>  
           <sup>Add Item</sup>
         </div>
       </div>
