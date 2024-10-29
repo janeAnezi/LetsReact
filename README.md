@@ -14,3 +14,9 @@ These basically covers
 # React Hooks (basic)
 # Event Handling
 # Data fetching (basic)
+
+
+# UseState is a react hook that "creates state variable" that helps us to track state in components and updates the user interface.
+
+
+
