@@ -24,6 +24,18 @@ const [car, setCar] = useState({
   year: 2023
 })
 
+ let changeColor = () => {
+  // setCar({ ...car, color: 'Blue', brand: 'Corola' })
+  setCar((prev)=>{return {...prev, color: "black"}})
+ }
+
+
+ const [num, setNum] = useState(0)
+
+ const countFun = ()=>{
+  setNum(num + 4)
+ }
+
   return (
     <div>
       {/* <h1>My favourite color is {color}</h1>
@@ -34,6 +46,13 @@ const [car, setCar] = useState({
 
       <h1>My {car.brand}</h1>
       <h3>It is a {car.color} {car.model} from {car.year}</h3>
+      <button onClick={changeColor}>Change</button>
+
+
+      <div>
+        <p>Count: {num}</p>
+        <button onClick={countFun}>Increase</button>
+      </div>
     </div>
   )
 }
