@@ -10,10 +10,19 @@ export default function UseStateComp() {
 //  }
 
 
-const [brand, setBrand] = useState('Ferrari')
-const [model, setModel] = useState('Roma')
-const [year, setyear] = useState('2023')
-const [color, setColor] = useState('Red')
+// const [brand, setBrand] = useState('Ferrari')
+// const [model, setModel] = useState('Roma')
+// const [year, setyear] = useState('2023')
+// const [color, setColor] = useState('Red')
+
+// ***** Instead this ****
+
+const [car, setCar] = useState({
+  brand: 'Ferrari',
+  color: "Red",
+  model: 'Roma',
+  year: 2023
+})
 
   return (
     <div>
@@ -23,8 +32,9 @@ const [color, setColor] = useState('Red')
 
       {/* Multiple State Variable */}
 
-      <h1>My {brand}</h1>
-      <h3>It is a {color} {model} from {year}</h3>
+      <h1>My {car.brand}</h1>
+      <h3>It is a {car.color} {car.model} from {car.year}</h3>
     </div>
   )
 }
+ 
