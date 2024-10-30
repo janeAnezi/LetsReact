@@ -19,4 +19,11 @@ These basically covers
 # UseState is a react hook that "creates state variable" that helps us to track state in components and updates the user interface.
 
 
+# UseEffect is used to create other side effects like ....
+**** Fetching data from APIs
+**** Setting timers
+**** Handling local storage
+**** Handling browser events
+**** Handling DOM mutations
+**** Handling server-side rendering
 
