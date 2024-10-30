@@ -12,3 +12,9 @@
     align-items: center;
     gap: 18px;
 }
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

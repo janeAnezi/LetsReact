@@ -1,5 +1,5 @@
 import AllContent from "./Components/LetsReact/AllContent";
-import './App.css'
+import './Components/Intro/App.css'
 import { useState } from "react";
 import Profile from "./Components/LetsReact/Profile";
 
