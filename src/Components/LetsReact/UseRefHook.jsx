@@ -10,13 +10,16 @@ export default function UseRefHook() {
     // })
 
 
-    const count = useRef()
+    const count = useRef(0)
+    console.log(count);
+
+
   return (
     <div>
       <button onClick={() => {setVal(prev => prev + 1)}}>+1</button>
       <h1>{val}</h1>
       <button onClick={() => {setVal(prev => prev - 1)}}>-1</button>
-      <h1>Render Count: </h1>
+      <h1>Render Count: {count.current} </h1>
     </div>
   )
 }
