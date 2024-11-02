@@ -12,6 +12,10 @@ export default function UseRefHook() {
 
     //  Accessing dome elements using useRef Hook
     const domElement = useRef()
+    
+    const btnClicked = () => {
+      console.log(domElement.current);
+    }
 
   return (
     <div>
@@ -24,7 +28,7 @@ export default function UseRefHook() {
       //  Accessing dome elements using useRef Hook
       <div>
         <input type="text" ref={domElement}/>
-        <button>Submit</button>
+        <button onClick={btnClicked}>Submit</button>
       </div>
     </div>
   )
