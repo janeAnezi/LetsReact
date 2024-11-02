@@ -15,6 +15,7 @@ export default function UseRefHook() {
     
     const btnClicked = () => {
       console.log(domElement.current);
+      domElement.current.style.background = "gold"
     }
 
   return (
