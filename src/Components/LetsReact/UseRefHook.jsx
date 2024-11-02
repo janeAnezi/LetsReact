@@ -4,15 +4,11 @@ export default function UseRefHook() {
     const [val, setVal] = useState(0)
     // const [count, setCount] = useState(0)
 
-
-    // useEffect(()=> {
-    //     setCount(prev => prev + 1)
-    // })
-
-
     const count = useRef(0)
-    console.log(count);
-
+    // console.log(count);
+    useEffect(()=> {
+       count.current = count.current + 1
+     })
 
   return (
     <div>
