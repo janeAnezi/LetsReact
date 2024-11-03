@@ -14,7 +14,8 @@ export default function UseMemoHook() {
 
   return (
     <div>
-      
+      <input type="text" />
+      <p>The cube of the nu</p>
     </div>
   )
 }
