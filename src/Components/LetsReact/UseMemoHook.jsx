@@ -4,7 +4,9 @@ export default function UseMemoHook() {
     const [number, setNumber] = useState(0)
     const [counter, setCounter] = useState(0)
 
-    funct
+    function cubeNum() {
+        console.log("calculation done!");
+    }
   return (
     <div>
       
