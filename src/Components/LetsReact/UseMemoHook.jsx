@@ -9,13 +9,13 @@ export default function UseMemoHook() {
         return Math.pow(num, 3)
     }
 
-    const result = cubeNum(num)
+    const result = cubeNum(number)
 
 
   return (
     <div>
-      <input type="text" />
-      <p>The cube of the nu</p>
+      <input type="number" onChange={(event) => {setNumber(event.target.value)}}/>
+      <p>The cube of the number: {result}</p>
     </div>
   )
 }
