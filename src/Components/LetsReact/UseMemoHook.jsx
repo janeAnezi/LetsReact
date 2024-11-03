@@ -8,6 +8,10 @@ export default function UseMemoHook() {
         console.log("calculation done!");
         return Math.pow(num, 3)
     }
+
+    const result = cubeNum(num)
+
+
   return (
     <div>
       
