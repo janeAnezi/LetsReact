@@ -28,3 +28,5 @@ These basically covers
 **** Handling server-side rendering
 
 # useRef Hook is used to create mutable variables, which will not re-render the component. also use for accessing DOM elements
+
+# useMemo Hook returns a memoized value, Its like catching a value so that it doesnt need to be calculated.
