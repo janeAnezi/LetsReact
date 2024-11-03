@@ -29,4 +29,7 @@ These basically covers
 
 # useRef Hook is used to create mutable variables, which will not re-render the component. also use for accessing DOM elements
 
-# useMemo Hook returns a memoized value, Its like catching a value so that it doesnt need to be calculated.
+# useMemo Hook returns a memoized value, Its like catching a value so that it doesnt need to be calculated. 
+**** useMemo Hook only runs when one of its dependencies gets updated (this can inprove the performance of the application)
+
+# useReducer Hook is used to handle complex state changes, it is similar to useState but it is
