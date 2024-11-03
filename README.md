@@ -31,5 +31,6 @@ These basically covers
 
 # useMemo Hook returns a memoized value, Its like catching a value so that it doesnt need to be calculated. 
 **** useMemo Hook only runs when one of its dependencies gets updated (this can inprove the performance of the application)
+**** useCallback also improves the performance of the application also. it is similar to useMemo, the difference is that it returns a memoized function unlike useMemo that returns a memoized value
 
 # useReducer Hook is used to handle complex state changes, it is similar to useState but it is
